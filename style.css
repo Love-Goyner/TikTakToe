@@ -1,0 +1,94 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: black;
+    color:white;
+}
+
+.heading
+{
+    text-decoration: underline;
+    text-decoration-color: aqua;
+    text-decoration-thickness: 2px;
+}
+
+.buttons
+{
+    height: 60vh;
+    width: 30vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr;
+    gap:8px;
+}
+
+.btn
+{
+    height:100%;
+    width:100%;
+    /* color: aquamarine; */
+    font-size: 60px;
+    background-color: #36454F;
+    border-radius: 15px;
+    border: none;
+    /* box-shadow: 2px 6px 0px rgb(138, 43, 226 , 0.6); */
+
+}
+
+.game
+{
+    padding-top:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
+
+.resertGame , .startGame
+{
+    width:130px;
+    height:40px;
+    margin:20px;
+    border-radius: 20px;
+    border : 1px solid pink;
+    color: aqua;
+    font-weight: bolder;
+    background-color: rgb(15, 15, 15);
+}
+
+.hide
+{
+    display: none;
+}
+
+.winnerDesc
+{
+    padding-bottom:40px;
+}
+
+.reset
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.winnerDesc
+{
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace ;
+    text-align: center;
+}
+
+@media (max-width: 400px) and (min-width: 00px){
+    .buttons{
+        width:90vw;
+    }
+}
